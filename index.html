@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>js outputs</title>
+        <style href="./css/sttyle.css" rel="style.css"></style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        
+        <script src="./js/script.js"></script>
+
+        <h1 class="mystudent3"></h1>
+        <script>
+            //here i can write js code
+            var student1= {
+                //1.property:value,
+                name:"aravind",//string
+                surname:"panasa"  //string
+                };  //js object
+            let _student2={
+                name:"chintu", //string
+                surname:`kondakalla`//string
+            };//js object
+            const $student3={
+                name:'shivalingam',//string
+                surname:` katna`  //string
+            };//js object
+            let student4={
+                name:"tharun",  //string
+                surname:'bokula'//string
+            };  //js object
+        </script>
+        <script>
+            /*the ways to see the output of js code*/
+            //1.  object.propertyname
+            console.log(student1.name+" "+student1.surname);
+
+            //2.  object["propertyname"];
+            window.alert(_student2["name"]+" "+_student2["surname"]);
+            
+            //3.  element.innerhtml
+            // element[expression];
+            let n="name"
+            var s="surname"
+            document.querySelector("h1.mystudent3").innerHTML=$student3[n]+$student3[s];
+            //4.  document.write();
+            document.write('<strong>'+student4["name"]+" "+student4.surname+'</strong>');
+        </script>
+        <script src="./js/script2.js"></script>
+    </body>
+</html>
